@@ -18,6 +18,7 @@ public:
 private:
 	float _WindowSizeX;
 	float _WindowSizeY;
+	float _Timer;
 	int _CellTotal;
 	int _CellSize;
 
