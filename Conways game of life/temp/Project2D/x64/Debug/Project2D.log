@@ -1,5 +1,1 @@
-﻿  GridManager.cpp
-c:\users\alexm\desktop\programming\conways game of life\project2d\gridmanager.cpp(20): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\alexm\desktop\programming\conways game of life\project2d\gridmanager.cpp(61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\alexm\desktop\programming\conways game of life\project2d\gridmanager.cpp(144): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Project2D.vcxproj -> C:\Users\alexm\Desktop\Programming\Conways game of life\temp\Project2D\x64\Debug\Project2D.exe
+﻿LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library

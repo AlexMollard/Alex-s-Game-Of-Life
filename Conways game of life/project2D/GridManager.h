@@ -8,11 +8,11 @@ class GridManager
 {
 public:
 	GridManager(int cellAmount, float windowSizeX, float windowSizeY);
-	~GridManager();
 
 	void Update(aie::Input* input, float deltaTime , float windowWidth, float windowHeight);
 	void Draw(aie::Renderer2D* renderer);
 
+	void Resize(float windowWidth, float windowHeight);
 	void CheckNeighbours();
 
 private:
@@ -20,7 +20,8 @@ private:
 	float _WindowSizeY;
 	float _Timer;
 	int _CellTotal;
-	int _CellSize;
+	int _CellSizeX;
+	int _CellSizeY;
 
 	Cell** _Cells;
 

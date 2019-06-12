@@ -18,7 +18,7 @@ bool Application2D::startup() {
 
 	_2dRenderer = new aie::Renderer2D();
 
-	_GridManager = new GridManager(50, getWindowWidth() ,getWindowHeight());
+	_GridManager = new GridManager(100, getWindowWidth() ,getWindowHeight());
 
 	_Texture = new aie::Texture("./textures/numbered_grid.tga");
 
@@ -26,7 +26,7 @@ bool Application2D::startup() {
 	
 	_Timer = 0;
 
-	setBackgroundColour(0.139f, 0.131f, 0.135f);
+	setBackgroundColour(0.10f, 0.108f, 0.178f);
 
 	return true;
 }
