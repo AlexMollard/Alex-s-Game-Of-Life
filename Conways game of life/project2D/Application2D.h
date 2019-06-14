@@ -18,10 +18,5 @@ public:
 protected:
 
 	aie::Renderer2D*	_2dRenderer;
-	aie::Texture*		_Texture;
-	aie::Texture*		_ShipTexture;
-	aie::Font*			_Font;
 	GridManager*		_GridManager;
-
-	float _Timer;
 };

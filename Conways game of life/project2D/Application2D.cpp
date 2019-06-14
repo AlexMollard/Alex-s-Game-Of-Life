@@ -3,7 +3,7 @@
 #include "Font.h"
 #include "Input.h"
 #include <random>
-
+#include <time.h>
 
 Application2D::Application2D() {
 
@@ -14,27 +14,19 @@ Application2D::~Application2D() {
 }
 
 bool Application2D::startup() {
-	srand(time_t(0));
+	srand(time(0));
 
 	_2dRenderer = new aie::Renderer2D();
 
-	_GridManager = new GridManager(100, getWindowWidth() ,getWindowHeight());
-
-	_Texture = new aie::Texture("./textures/numbered_grid.tga");
-
-	_Font = new aie::Font("./font/consolas.ttf", 32);
-	
-	_Timer = 0;
+	_GridManager = new GridManager(25, getWindowWidth() ,getWindowHeight());
 
 	setBackgroundColour(0.10f, 0.108f, 0.178f);
 
 	return true;
 }
 
-void Application2D::shutdown() {
-	
-	delete _Font;
-	delete _Texture;
+void Application2D::shutdown() 
+{
 	delete _2dRenderer;
 	delete _GridManager;
 }
