@@ -79,7 +79,7 @@ void GridManager::Update(aie::Input* input, float deltaTime, float windowWidth, 
 		Resize(windowWidth, windowHeight);
 
 	// Check all cells neighbours
-	if (input->isKeyDown(aie::INPUT_KEY_SPACE) && _Timer > 2)
+	if (input->isKeyDown(aie::INPUT_KEY_SPACE) && _Timer > 0.1f)
 	{
 		CheckNeighbours();
 		_Timer = 0;	
